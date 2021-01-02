@@ -18,9 +18,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    'header'
+    'main'
+    'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
@@ -38,7 +38,6 @@ footer {
   background-color: #203040;
   color: #ffffff;
 }
-
 /* Common */
 h1 {
   font-size: 1.8rem;
@@ -48,6 +47,7 @@ h2 {
   font-size: 1.6rem;
   padding: 1rem 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -90,7 +90,9 @@ button.primary {
 button.block {
   width: 100%;
 }
-
+button.small {
+  font-size: 1.2rem;
+}
 /* Header */
 header a {
   color: #ffffff;
@@ -163,7 +165,6 @@ img.large {
 .price {
   font-size: 2rem;
 }
-
 /* Rating */
 .rating span {
   color: #f0c040;
@@ -172,7 +173,6 @@ img.large {
 .rating span:last-child {
   color: #404040;
 }
-
 /* Alert */
 .loading {
   display: block !important;
@@ -233,10 +233,10 @@ img.large {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*  Checkout Steps */
+/* Checkout Steps */
 .checkout-steps > div {
   border-top: 0.3rem #c0c0c0 solid;
-  color: c0c0c0;
+  color: #c0c0c0;
   flex: 1;
   padding: 1rem;
   font-weight: bold;
@@ -244,4 +244,21 @@ img.large {
 .checkout-steps > div.active {
   border-top-color: #f08000;
   color: #f08000;
+}
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+.table button {
+  margin: 0 0.2rem;
 }
